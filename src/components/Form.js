@@ -1,13 +1,15 @@
 import React from 'react';
+import "./Form.css"
 
 const Form = () => {
   return (
-    <form>
-      <input type="text" class="todo-input" />
-      <button class="todo-button" type="submit">
-        <h4>Add</h4>
-      </button>
-    </form>
+    <div className="form-container">
+      <h3>To-Dos</h3>
+      <form className="form">
+        <input type="text" className="todo-input" placeholder="New Todo..."/>
+        <button className="todo-button"><h2>Add</h2></button>
+      </form>
+    </div>
   );
 }
 
