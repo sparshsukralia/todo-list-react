@@ -15,8 +15,9 @@
 .form input {
   outline: none;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   padding: 0.5rem;
+  width: 250px;
 }
 
 .form {
@@ -28,8 +29,8 @@ button {
   border: none;
   padding: 0.5rem 1.3rem;
   margin-left: 2rem;
-  background-color: #ff704c;
-  color: white;
+  background-color: #0067b8;
+  color: #fff;
 }
 
 .todo-button h2 {
@@ -38,6 +39,6 @@ button {
 }
 
 button:hover {
-  background-color: black;
+  background-color: #0a4f83;
   color: #fff;
 }
