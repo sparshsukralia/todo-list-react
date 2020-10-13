@@ -1,10 +1,18 @@
 import React from 'react';
 import "./Form.css"
 
-const Form = () => {
+const Form = ({ inputText, setInputText, todo, setTodo }) => {
 
   const inputTextHandler = (e) => {
     console.log(e.target.value)
+    setInputText(e.target.value);
+  }
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setTodo([
+      ...todo, {text: inputText, id: Math.random() * 1000}
+    ]);
   }
 
   return (
@@ -12,7 +20,7 @@ const Form = () => {
       <h3>To-Dos</h3>
       <form className="form">
         <input onChange={inputTextHandler} type="text" className="todo-input" placeholder="New Todo..."/>
-        <button className="todo-button"><h2>Add</h2></button>
+        <button className="todo-button" onClick={submitHandler}><h2>Add</h2></button>
       </form>
     </div>
   );
