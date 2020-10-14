@@ -2,6 +2,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-  min-width: 65%;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.todo li {
+  flex: 1;
+  padding: 0.6rem;
+}
+
+.trash-btn,
+.check-btn {
+  padding: 0.7rem 1rem;
+}
+
+.check-btn {
+  margin-left: 0;
+}
+
+.trash-btn {
+  margin-left: 0.2rem;
 }
