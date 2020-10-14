@@ -12,9 +12,9 @@ body {
 
 .todo-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin: 12rem auto;
-  padding: 1rem;
+  padding: 0 1rem;
   background-color: #fff;
   max-width: 450px;
   min-height: 400px;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Form from "./components/Form";
+import TodoList from "./components/TodoList";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <div className="todo-container">
         <Form todo={todo} setTodo={setTodo} inputText={inputText} setInputText={setInputText} />
+        <TodoList todo={todo}/>
       </div>
     </div>               
   );
